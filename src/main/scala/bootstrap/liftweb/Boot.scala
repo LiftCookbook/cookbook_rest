@@ -8,7 +8,7 @@ import sitemap._
 import Loc._
 import net.liftmodules.JQueryModule
 import net.liftweb.http.js.jquery._
-
+import code.rest.IssuesService
 
 
 /**
@@ -53,6 +53,9 @@ class Boot extends Loggable {
     LiftRules.jsArtifacts = JQueryArtifacts
     JQueryModule.InitParam.JQuery = JQueryModule.JQuery172
     JQueryModule.init()
+
+
+    IssuesService.init()
 
   }
 }
