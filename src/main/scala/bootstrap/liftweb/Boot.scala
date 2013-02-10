@@ -59,6 +59,7 @@ class Boot extends Loggable {
     Suffix.init()
     Reunite.init()
     CSV.init()
+    Upload.init()
 
   }
 }
