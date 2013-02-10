@@ -8,7 +8,7 @@ import sitemap._
 import Loc._
 import net.liftmodules.JQueryModule
 import net.liftweb.http.js.jquery._
-import code.rest.{Reunite, Suffix, IssuesService}
+import code.rest._
 
 
 /**
@@ -58,6 +58,7 @@ class Boot extends Loggable {
     IssuesService.init()
     Suffix.init()
     Reunite.init()
+    CSV.init()
 
   }
 }
