@@ -61,6 +61,7 @@ class Boot extends Loggable {
     CSV.init()
     Upload.init()
     QuotationsAPI.init()
+    LiftRules.statelessDispatch.append(code.rest.Sitemap)
 
   }
 }
