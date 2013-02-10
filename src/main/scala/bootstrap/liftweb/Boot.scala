@@ -60,6 +60,7 @@ class Boot extends Loggable {
     Reunite.init()
     CSV.init()
     Upload.init()
+    QuotationsAPI.init()
 
   }
 }
