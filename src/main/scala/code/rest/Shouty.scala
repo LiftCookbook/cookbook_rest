@@ -3,7 +3,7 @@ package code.rest
 import net.liftweb.http.rest.RestHelper
 import net.liftweb.json.JsonDSL._
 import net.liftweb.json.JsonAST._
-import net.liftweb.http.{OkResponse, Req, LiftRules}
+import net.liftweb.http.LiftRules
 
 /**
  * Provides a CAPITALISED greeting to a JSON request containing a "name" value.
