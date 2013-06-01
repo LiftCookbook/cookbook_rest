@@ -8,7 +8,7 @@ import net.liftweb.util.Helpers
 object Suffix extends RestHelper {
 
   def init() : Unit = {
-    LiftRules.explicitlyParsedSuffixes = Helpers.knownSuffixes &~ Set("com")
+    LiftRules.explicitlyParsedSuffixes = Helpers.knownSuffixes - "com"
     LiftRules.statelessDispatch.append(Suffix)
   }
 
