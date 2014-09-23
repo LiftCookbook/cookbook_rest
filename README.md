@@ -5,8 +5,10 @@ This project contains examples from the [Lift Cookbook](http://shop.oreilly.com/
 
 To run this application:
 
-* Launch SBT with: `./sbt` or `sbt.bat`
+* Install SBT from http://www.scala-sbt.org/
+
+* Start SBT using `sbt` (Mac and Linux) or `sbt.bat` (Windows)
 
 * In SBT, `container:start`
 
-There's nothing to see in a browser: these examples work best with cURL.
+There's nothing to see in a browser: these examples work best with [cURL](http://curl.haxx.se/) or [HTTPie](http://httpie.org).
