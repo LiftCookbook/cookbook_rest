@@ -5,9 +5,9 @@ import net.liftweb.http.rest.RestHelper
 
 object Sitemap extends RestHelper {
   serve {
-    case Req("sitemap" :: Nil, _, GetRequest) =>
+    case "sitemap" :: Nil Get req =>
       XmlResponse(
-        S.render(<lift:embed what="sitemap" />, S.request.get.request)
-      .head)
+        S.render(<lift:embed what="sitemap" />, req.request).head
+      )
   }
 }
