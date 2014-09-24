@@ -23,7 +23,8 @@ class Boot extends Loggable {
 
     // Build SiteMap
     val entries = List(
-      Menu.i("Home") / "index"
+      Menu.i("Home") / "index",
+      Menu.i("Watch some videos") / "videos"
     )
 
     // set the sitemap.  Note if you don't want access control for
