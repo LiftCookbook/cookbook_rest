@@ -48,6 +48,14 @@ class Boot extends Loggable {
     Shouty.init()
     VideoServer.init()
 
+    // Google Sitemap example - not to be confused with Lift's SiteMap
     LiftRules.statelessDispatch.append(code.rest.Sitemap)
+    LiftRules.htmlProperties.default.set({ request: Req =>
+      request.path.partPath match {
+        case "sitemap" :: Nil => OldHtmlProperties(request.userAgent)
+        case _                => Html5Properties(request.userAgent)
+      }
+    })
+
   }
 }
